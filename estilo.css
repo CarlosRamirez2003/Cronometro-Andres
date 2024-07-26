@@ -1,0 +1,53 @@
+
+body { /* estilo del cuerpo de la pagina */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f575a;
+}
+
+.marco { /* estilo para el marco donde estan los botones y numeros  */
+    text-align: center;
+    background: #3f9999;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tiempo { /* estilopara el panel tiempo */
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.dos-puntos { /* estilo para los dos puntos */
+    margin: 0 5px;
+}
+
+.botones { /* contenedor de los botones */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botones button { /* estilo para el marco donde estan solo los botones */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.botones button:disabled {/* se establece un estilo para los botones que no estan activados */
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.botones button:hover:not(:disabled) { /* cambia de color o resalta cuando se pase el cursor arriba */
+    background-color: #b35100; 
+}
